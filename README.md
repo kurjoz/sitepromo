@@ -12,5 +12,6 @@ This is HTML/CSS template for Sitepromo projects, that uses:
 
 To install and build templates, use:
 
-'npm install'
-'bower install'
+`npm install`
+
+`bower install`

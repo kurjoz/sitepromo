@@ -1,12 +1,16 @@
-#Personal Boilerplate for my own frontend projects.
-Work in progress.
-To install all dependencies clone the repository<br>
-Then:
-<br>
-<code>
-    npm install
-    <br/>
-    bower install
-</code>
+##Sitepromo frontend
 
-## This is private repository.
+This is HTML/CSS template for Sitepromo projects, that uses:
+
+* HTML
+* CSS
+* Grunt
+* Node
+* Bower
+* Bootstrap3
+* Grunt.js
+
+To install and build templates, use:
+
+'npm install'
+'bower install'

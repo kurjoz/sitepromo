@@ -74,6 +74,7 @@ module.exports = function(grunt) {
                         cwd: '<%= dev %>/',
                         src: [
                             'css/**',
+                            'js/**', //@TODO: Add JS Concatenation Plugin;
                             'fonts/**',
                             'im/**',
                             '*.html',

@@ -1,0 +1,98 @@
+body{
+    padding-top: 126px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+body.subpage .content-container p{
+    font-size: 16px;
+}
+
+//Typography:
+h1, h2, h3, h4, h5 ,h6{
+    margin: 10px 0;
+    color: #3e517b;
+}
+h1{
+    margin: 15px 0;
+    font-size: 44px;
+    line-height: 1.25;
+}
+h2{
+    margin: 15px 0;
+    font-size: 36px;
+}
+h3{
+    margin: 10px 0;
+    font-size: 24px;
+}
+h4{}
+h5{}
+h6{}
+
+.content-container ul{
+    margin: 20px 0 40px;
+    padding: 0 0 0 50px;
+    list-style-type: none;
+    font-size: 16px;
+    li{
+        margin: 10px 0;
+        padding: 0 0 0 15px;
+        position: relative;
+        color: #6d6d6d;
+
+        a{
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+
+        &:before{
+            position: absolute;
+            content: '•';
+            left: 0;
+            top: 2px;
+            font-size: 22px;
+            line-height: 22px;
+            color: #ca3438;
+        }
+    }
+}
+
+a{
+    color: #5389c4;
+}
+
+.content-container{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background: transparent url("../im/bg/contentBg.png") 0 0 repeat-x;
+}
+
+//Google Maps
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+@media (max-width: @screen-sm-max) {
+    h1{
+        font-size: 32px;
+    }
+    h2,
+    .profi-block .pro-bubble .inner h2{
+        font-size: 24px;
+    }
+    h3{
+        margin: 10px 0;
+        font-size: 18px;
+    }
+}

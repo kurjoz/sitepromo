@@ -1,0 +1,95 @@
+.contacts-container{
+    margin-bottom: 50px;
+    .col-md-4{
+    }
+
+    .contacts-container-section{
+        &.phone{
+            .thmb{
+                text-align: left;
+                img{
+                    margin-left: 20px;
+                }
+            }
+        }
+        &.e-contacts{
+            text-align: center;
+            .thmb{
+                margin: 0 auto 40px;
+                position: relative;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    height: 7px;
+                    width: 200px;
+                    left: -230px;
+                    top: 50%;
+                    margin-top: -4px;
+                    background-image: url(../im/bg/dotsContacts.png);
+                    background-position: 0 0;
+                    background-repeat: repeat-x;
+                }
+                &:after{
+                    content: '';
+                    position: absolute;
+                    height: 7px;
+                    width: 200px;
+                    left: 230px;
+                    top: 50%;
+                    margin-top: -4px;
+                    background-image: url(../im/bg/dotsContacts.png);
+                    background-position: 0 0;
+                    background-repeat: repeat-x;
+                }
+            }
+        }
+        &.address{
+            .thmb{
+                margin: 0 0 40px auto;
+                text-align: right;
+                img{
+                    margin-right: 20px;
+                }
+            }
+            p{
+                margin-left: 100px;
+            }
+        }
+        .thmb{
+            margin-bottom: 40px;
+            background-color: #fff;
+            width: 200px;
+            text-align: center;
+            height: 100px;
+            line-height: 100px;
+        }
+    }
+}
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .contacts-container .contacts-container-section.address p{
+        margin-left: 0;
+    }
+}
+@media (max-width: @screen-sm-max) {
+    .contacts-container .contacts-container-section.address p{
+        margin-left: 0;
+    }
+    .contacts-container .contacts-container-section.phone .thmb,
+    .contacts-container .contacts-container-section.address .thmb{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+        img{
+            margin: 0;
+        }
+    }
+    .contacts-container .contacts-container-section{
+        text-align: center;
+    }
+    .contacts-container .contacts-container-section.e-contacts .thmb:before,
+    .contacts-container .contacts-container-section.e-contacts .thmb:after{
+        display: none;
+    }
+}

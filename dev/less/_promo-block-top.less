@@ -1,0 +1,81 @@
+.promo-block-top{
+    margin: 0;
+    padding: 0px 0 0;
+    position: relative;
+    background-image: url(../im/bg/startpageJumboBg.jpg);
+    min-height: 360px;
+    &:before{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 50%;
+        margin-left: -350px;
+        width: 700px;
+        height: 380px;
+        background-image: url('../im/gague.png');
+        background-position: center bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    h1{
+        font-size: 44px;
+        line-height: 1.25;
+    }
+
+    h2{
+        margin: 15px 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    h3{
+        margin: 15px 0;
+        padding: 0;
+    }
+    p{
+        margin: 15px 0;
+        padding: 0;
+        font-size: 14px;
+    }
+    .col-md-4,
+    .col-lg-3{
+        padding-top: 60px;
+    }
+    .btn-container{
+        height: 50px;
+        width: 300px;
+        text-align: center;
+
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        margin-left: -150px;
+        .btn{
+            position: relative;
+            z-index: 10;
+        };
+    }
+}
+
+//Promo Block responsive
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    body{
+        //border: 1px solid green;
+    }
+    .promo-block-top:before{
+        width: 480px;
+        margin-left: -240px;
+    }
+}
+@media (max-width: @screen-sm-max) {
+    body{
+        //border: 1px solid blue;
+    }
+    .promo-block-top{
+        padding-bottom: 60px;
+        min-height: 0;
+    }
+    .promo-block-top:before{
+        display: none;
+    }
+
+}

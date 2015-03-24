@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         dev:'dev',
         production:'production',
-        repo: 'git@github.com:kurjoz/scratch.git',
+        repo: 'git@github.com:kurjoz/sitepromo.git',
         pkg: grunt.file.readJSON('package.json'),
         //  Grunt Connect;
         less:{

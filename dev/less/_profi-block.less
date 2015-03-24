@@ -1,0 +1,61 @@
+.profi-block{
+    padding: 50px 0 80px;
+    position: relative;
+    background-color: #3e517b;
+    background-image: url('../im/bg/dots.png');
+    background-repeat: no-repeat;
+    background-position: center 240px;
+    -webkit-background-size: 1680px auto;
+    background-size: 1680px;
+
+    h1{
+        text-align: center;
+        color: #fff;
+    }
+    h4{
+        text-align: center;
+        color: #779dc9;
+        font-size: 20px;
+    }
+    h1+h4{
+        margin-bottom: 40px;
+    }
+}
+.profi-block{
+    .pro-bubble{
+        margin: 0 auto 50px;
+        background-color: #d0d3dd;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        display: table;
+        .inner{
+            padding: 0 25px;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+
+            h2{
+                font-size: 30px;
+                line-height: 1.25;
+            }
+            p{
+                color: #6d6d6d;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px){
+    .profi-block{
+        background-position: center 326px;
+        -webkit-background-size: 1240px auto;
+        background-size: 1240px auto;
+    }
+}
+
+@media  (max-width: 991px){
+    .profi-block{
+        background-image: none;
+    }
+}
